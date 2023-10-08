@@ -5,6 +5,9 @@ function Users({ users, dispatch, setBalance, balance }) {
 
     function handleFuel() {
         // dispatch({ type: "fuel", setBalance, balance });
+        if(balance >= 50){
+          setBalance(n=>n-50)
+        }
     }
     return (
         <div>
